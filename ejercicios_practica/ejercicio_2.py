@@ -1,7 +1,7 @@
 # Condicionales [Python]
 # Ejercicios de práctica
 
-# Autor: Inove Coding School
+# Autor: Edwin Yepez
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
@@ -10,27 +10,46 @@
 # Ejemplos variables de texto
 
 # Comparadores
-# Ingrese dos palabras cualesquiera y realice las sigueintes
+# Ingrese dos palabras cualesquiera y realice las siguientes
 # comparaciones entre ellas
+
 texto_1 = str(input('Ingrese la primera palabra:\n'))
 
 texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 # Compare cual de las dos palabras es mayor (alfabéticamente)
 # Imprima en pantalla según corresponda
+if(texto_1 > texto_2):
+    print('El texto: ' ,texto_1, ' es mayor alfabeticamente que el texto: ' ,texto_2)
+else:
+    print('El texto: ' ,texto_2, ' es mayor alfabeticamente que el texto: ' ,texto_1)
 
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
 # Imprima en pantalla según corresponda
+if(len(texto_1) > len(texto_2)):
+    print('La longitud de la palabra: ',texto_1, ' es MAYOR que la longitud de la palabra: ',texto_2)
+elif(len(texto_1) < len(texto_2)):
+    print('La longitud de la palabra: ',texto_2, ' es MAYOR que la longitud de la palabra: ',texto_1)
+else:
+    print('La longitud de la palabra: ',texto_1, ' es IGUAL que la longitud de la palabra: ',texto_2)
 
 # Verifique si la primera letra de la primera palabra
 # es mayor a la primera letra de la segunda palabra
 # Imprima en pantalla según corresponda
+if(texto_1[0] > texto_2[0]):
+    print('La primera letra de la palabra: ',texto_1, ' es mayor que la primera letra de la palabra: ',texto_2)
+else:
+    print('La primera letra de la palabra: ',texto_2, ' es mayor que la primera letra de la palabra: ',texto_1)
 
 copia_texto_1 = texto_1  # Copia de la variable texto_1
 
 # Verifique que copia_texto_1 es igual a texto_1
 # Imprima en pantalla según corresponda
-
+if(copia_texto_1 == texto_1):
+    print('La palabra: ',copia_texto_1, ' es igual a la palabra: ',texto_1)
+    
 # Verifique que copia_texto_1 es distinta a texto_2
 # Imprima en pantalla según corresponda
+if(copia_texto_1 != texto_2):
+    print('La palabra: ',copia_texto_1, ' NO es igual a la palabra: ',texto_2)

@@ -1,7 +1,7 @@
 # Condicionales [Python]
 # Ejercicios de práctica
 
-# Autor: Inove Coding School
+# Autor: Edwin Yepez
 # Version: 2.0
 
 # IMPORTANTE: NO borrar los comentarios
@@ -10,7 +10,7 @@
 # Ejercicios de práctica numérica
 
 # Comparadores
-# Ingrese dos números cualesquiera y realice las sigueintes
+# Ingrese dos números cualesquiera y realice las siguientes
 # comparaciones entre ellos
 numero_1 = int(input('Ingrese el primer número:\n'))
 
@@ -18,13 +18,33 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 
 # Compare cual de los dos números es mayor
 # Imprima en pantalla según corresponda
+if(numero_1 > numero_2):
+    print('El numero {} es mayor que el numero {}' .format(numero_1,numero_2))
+elif(numero_1 < numero_2):
+    print('El numero {} es mayor que el numero {}' .format(numero_2,numero_1))
+else:
+    print('Los numeros ingresados son iguales!!')
 
 # Verifique si el numero_1 positivo, negativo o cero
 # Imprima el resultado en cada caso
+if(numero_1 > 0):
+    print('En numero {} es positivo!!' .format(numero_1))
+elif(numero_1 <0):
+    print('El numero {} es negativo!!' .format(numero_1))
+else:
+    print('El numero es CERO!!')
 
 # Verifique si el numero_1 es mayor a 0 y menor a 100
 # Imprima en pantalla si se cumple o no la condición
+if(numero_1 > 0 and numero_1 < 100):
+    print('El numero ' ,numero_1, ' esta en el intervalo entre 0 y 100')
+else:
+    print('El numero ',numero_1, ' NO esta en el intervalo entre 0 y 100')
 
 # Verifique si el numero_1 es menor a 10 o el numero_2
 # es mayor a -2
 # Imprima en pantalla si se cumple o no la condición
+if(numero_1 < 10 or numero_2 > -2):
+    print('El numero ' ,numero_1, ' es menor que 10 O el numero ',numero_2, ' es mayor que -2')
+else:
+    print('El numero ' ,numero_1, ' NO es menor que 10 O el numero ',numero_2, ' NO es mayor que -2')

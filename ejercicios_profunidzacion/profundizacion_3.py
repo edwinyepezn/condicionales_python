@@ -30,3 +30,23 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+temp_1 = float(input('Ingrese la primera temperatura: '))
+temp_2 = float(input('Ingrese la segunda temperatura: '))
+temp_3 = float(input('Ingrese la tercera temperatura: '))
+if(temp_1 > temp_2) and (temp_2 > temp_3):
+    print('La temperatura mayor es {} , y la temperatura menor es {}'.format(temp_1,temp_3))
+elif(temp_1 > temp_3) and (temp_3 > temp_2):
+    print('La temperatura mayor es {} , y la temperatura menor es {}'.format(temp_1,temp_2))
+elif(temp_2 > temp_1) and (temp_1 > temp_3):
+    print('La temperatura mayor es {} , y la temperatura menor es {}'.format(temp_2,temp_3))
+elif(temp_2 > temp_3) and (temp_3 > temp_1):
+    print('La temperatura mayor es {} , y la temperatura menor es {}'.format(temp_2,temp_1))
+elif(temp_3 > temp_1) and (temp_1 > temp_2):
+    print('La temperatura mayor es {} , y la temperatura menor es {}'.format(temp_3,temp_2))
+elif(temp_3 > temp_2) and (temp_2 > temp_1):
+    print('La temperatura mayor es {} , y la temperatura menor es {}'.format(temp_3,temp_1))
+else:
+    print('Las temperaturas son iguales!!!')
+prom = (temp_1 + temp_2 + temp_3) / 3
+print('El promedio de temperaturas es: ',prom)
+

@@ -1,7 +1,7 @@
 # Condicionales [Python]
 # Ejercicios de profundización
 
-# Autor: Inove Coding School
+# Autor: Edwin Yepez
 # Version: 2.0
 
 # NOTA: 
@@ -22,3 +22,12 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+numero_1 = float(input('Ingrese el primer numero: '))
+numero_2 = float(input('Ingrese el segundo numero: '))
+diferencia = numero_1 - numero_2
+if(diferencia > 0):
+    print('la diferencia entre {} y {} es POSITIVA y tiene un valor de: {}'.format(numero_1,numero_2,diferencia))
+elif(diferencia < 0):
+    print('la diferencia entre {} y {} es NEGATIVA y tiene un valor de: {}'.format(numero_1,numero_2,diferencia))
+else:
+    print('la diferencia entre {} y {} es CERO '.format(numero_1,numero_2))
